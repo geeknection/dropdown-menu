@@ -4,10 +4,8 @@
     <title>Dropdown menu pure Js</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
     <style>
-    .dropdown.show {
-        .dropdown-menu {
-            display: block;
-        }
+    .dropdown.show .dropdown-menu {
+      display: block;
     }
     </style>
   </head>
@@ -22,10 +20,9 @@
         <a class="dropdown-item" href="#">Something else here</a>
       </div>
     </div>
-    <script src='./dropdownMenu.js' type='module'></script>
+    <script src='./dropdownMenu.js'></script>
     <script>
-    var classDropdownMenu = new dropdownMenu();
-      classDropdownMenu.init();
+    new dropdownMenu().init();
     </script>
   </body>
 </html>
