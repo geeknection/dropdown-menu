@@ -35,7 +35,7 @@ class dropdownMenu {
     addEventListener() {
         window.addEventListener('click', (event) => {
             for (var i = 0; i < this.selectBtn.length; i++) {
-                if (event.target !== this.selectBtn[i].children[0]){
+                if (event.toElement.offsetParent !== this.selectBtn[i]){
                     this.removeClassDropdown(this.selectBtn[i], 'show');
                 }
             }
