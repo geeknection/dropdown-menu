@@ -73,5 +73,3 @@ class dropdownMenu {
         return true;
     }
 }
-
-export default dropdownMenu;
