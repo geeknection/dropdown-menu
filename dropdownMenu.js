@@ -1,5 +1,6 @@
 /**
- * Controla o drop de menu para abrir ou fechar
+ * @todo Controla o drop de menu para abrir ou fechar
+ * @author Bruno Nascimento <br.dev.jobs@gmail.com>
  */
 class dropdownMenu {
     constructor() {
@@ -11,8 +12,8 @@ class dropdownMenu {
     }
     
     /**
-     * Controla o click nos dropdown
-     *
+     * @todo Controla o click nos dropdown
+     * @returns {void}
      */
     dropdownClickController() {
         const classThis = this;
@@ -30,7 +31,8 @@ class dropdownMenu {
         }
     }
     /**
-     * Escuta o evento de click para saber se foi clicado em algum outro item que não seja o dropdown
+     * @todo Escuta o evento de click para saber se foi clicado em algum outro item que não seja o dropdown
+     * @returns {void}
      */
     addEventListener() {
         window.addEventListener('click', (event) => {
@@ -42,9 +44,10 @@ class dropdownMenu {
         });
     }
     /**
-     * Adiciona uma classe ao dropdown clicado
+     * @todo Adiciona uma classe ao dropdown clicado
      * @param {*} el 
      * @param {*} classToToggle 
+     * @returns {void}
      */
     addClassDropdown(el, position, classToToggle) {
         var classN = el[position].className
@@ -53,9 +56,10 @@ class dropdownMenu {
         }
     }
     /**
-     * Remove uma classe de todos os dropdown
+     * @todo Remove uma classe de todos os dropdown
      * @param {*} el 
-     * @param {*} classToToggle 
+     * @param {*} classToToggle
+     * @returns {void}
      */
     removeClassDropdown(el, classToToggle) {
         var classN = el.className;
@@ -65,7 +69,8 @@ class dropdownMenu {
     }
 
     /**
-     * Inicia a classe
+     * @todo Inicia a classe
+     * @returns {Boolean}
      */
     init() {
         this.dropdownClickController();
